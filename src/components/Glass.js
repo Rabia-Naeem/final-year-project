@@ -1,7 +1,6 @@
 import "./Glass.css";
 import { useState } from "react";
 import axios from "axios";
-// import outPut from "./output";
 
 function Glass() {
 	const [moisture, setmoisture] = useState("");
@@ -18,7 +17,7 @@ function Glass() {
 			.post("http://localhost:8000/prediction", params)
 			.then((res) => {
 				const data = res.data.data;
-				const parameters = JSON.stringify(params);
+				// const parameters = JSON.stringify(params);
 				setPrediction(data.prediction);
 				setInterpretation(data.interpretation);
 			})
@@ -65,7 +64,7 @@ function Glass() {
 				</div>
 
 				<div className="glass__form__group">
-					<button type="submit" className="glass__form__btn__submit">
+					<button type="submit" className="glass__form__btn">
 						Submit
 					</button>
 				</div>
@@ -74,7 +73,7 @@ function Glass() {
 					<div>{`Interpretation: ${interpretation}`}</div>
 				</div>
 				<div className="glass__form__group">
-					<button type="button" className="glass__form__btn__reset" onClick={reset}>
+					<button type="button" className="glass__form__btn" onClick={reset}>
 						Reset
 					</button>
 				</div>
