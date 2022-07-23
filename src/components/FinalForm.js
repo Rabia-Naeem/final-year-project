@@ -2,7 +2,7 @@ import "./Glass.css";
 import { useState } from "react";
 import axios from "axios";
 
-function Glass() {
+function FinalForm() {
 	const [moisture, setmoisture] = useState("");
 	const [temp, setTemp] = useState("");
 	const [prediction, setPrediction] = useState("");
@@ -81,4 +81,4 @@ function Glass() {
 		</div>
 	);
 }
-export default Glass;
+export default FinalForm;

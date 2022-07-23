@@ -22,9 +22,9 @@ const Navbar = () => {
 								<li
 									key={item.id}
 									className={`${item.cName}`}
-									// onClick={() => setDropdown(!dropdown)}
-									onMouseEnter={() => setDropdown(true)}
-									onMouseLeave={() => setDropdown(false)}
+									onClick={() => setDropdown(!dropdown)}
+									// onMouseEnter={() => setDropdown(true)}
+									// onMouseLeave={() => setDropdown(false)}
 								>
 									<Link to={item.path}>{item.title}</Link>
 									{dropdown && <Dropdown />}

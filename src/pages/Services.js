@@ -1,11 +1,10 @@
 import React from "react";
-import Cards from "../components/Cards";
-import FormField from "../components/from-fields";
+import Form from "../components/Form";
 function Services() {
 	return (
 		<div className="services">
-			<Cards />
-			<FormField/>
+			<Form />
+
 			
 		</div>
 	);

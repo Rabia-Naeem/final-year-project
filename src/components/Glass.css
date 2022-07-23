@@ -72,3 +72,12 @@
 	border-radius: 3px;
 	box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
 }
+
+.radio{
+	margin-top: 50px;
+	text-shadow: none;
+	font-size: 1.25rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

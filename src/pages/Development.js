@@ -1,9 +1,9 @@
 import React from "react";
-import Glass from "../components/Glass"
+import FinalForm from "../components/FinalForm"
 function Development() {
 	return (
 		<div>
-			<h1 className="development"><Glass/></h1>
+			<h1 className="development"><FinalForm/></h1>
 			
 		</div>
 	);
